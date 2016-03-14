@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.fjq.layout.Game2048Layout
+        android:id="@+id/id_game2048"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+    </com.fjq.layout.Game2048Layout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_game2048"
+        android:background="@drawable/corners_bg"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/current_score_panel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_score_info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/current_score_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_score_info"
+            android:layout_alignEnd="@+id/current_score_info"
+            android:layout_alignStart="@+id/current_score_info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="@string/current_score"
+            android:id="@+id/id_score" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_game2048"
+        android:background="@drawable/corners_bg"
+        android:layout_alignTop="@+id/current_score_panel"
+        android:layout_alignRight="@+id/id_game2048"
+        android:layout_marginRight="25dp"
+        android:id="@+id/best_score_panel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_score_info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/best_score_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/best_score_info"
+            android:layout_alignEnd="@+id/best_score_info"
+            android:layout_alignStart="@+id/best_score_info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="@string/best_score"
+            android:id="@+id/best_score" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

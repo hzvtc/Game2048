@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">game2048</string>
+    <string name="current_score_info">分数</string>
+    <string name="best_score_info">最高分数</string>
+    <string name="current_score">0</string>
+    <string name="best_score">0</string>
+</resources>
